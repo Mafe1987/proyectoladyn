@@ -1,0 +1,157 @@
+footer{
+    
+    width: 100%;
+    background-color: black;
+    margin-top: 150px;
+    
+}
+
+
+.negro{
+    color: #ffffff;
+    display: grid;
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+}
+.copy{
+    border-top: solid 2px #ffffff;
+}  
+dd{
+    text-align: center;
+    color: #ffffff;
+    margin-top: 10px;
+  }
+
+
+
+.enlaces{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.primera{
+    align-self: end;
+}
+.medio{
+    justify-self:  center;
+    align-self: center;
+}
+.tres{
+    justify-self:  center;
+    align-self: end;
+}
+.separado{
+    margin-top: 20px;
+}
+.ultima{
+    text-align: right;
+}
+
+li{
+    list-style:  none;
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+.gris{
+    
+    background-color: grey;
+    width: 80%;
+    margin: auto;
+    transform: translateY(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    
+    
+}
+
+.segun{
+    display: grid;
+    padding: 50px;
+    gap: 10px;
+       
+}
+b{
+    margin-left: 20px;
+    color: #ffffff;
+  }
+ 
+    
+    
+   
+.textfoo{
+    font-size: 30px;
+    color: white;
+    justify-content: center;
+
+    
+}
+span{
+    color: orange;
+    justify-self: center;
+}
+input{
+    background-color: transparent;
+    border: solid 1px white;
+    border-radius: 100px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+button{
+    background-color: transparent;
+    border: solid 1px #df991b;
+    border-radius: 100px;
+    padding: 10px 20px;
+    font-size: 20px;
+    width: 60%;
+    color: #df991b;
+    justify-self: end;
+}
+@media (max-width: 700px) {
+    footer
+        .gris{
+            display: none;
+        }
+    
+        .negro
+          .copy{
+            display: none;
+          }
+          .enlaces{
+            grid-template-columns: repeat(2, 1fr);
+            color: #dddd
+          }
+           
+          .primera{
+            grid-column: span2;
+            justify-self: baseline;
+           }
+
+            .ultima{
+                grid-column: span2;
+                margin-top: 30px;
+                justify-self: baseline;
+                text-align: left;
+            }
+
+            .tres{
+               justify-self: baseline;
+            }
+
+             .medio{
+                justify-self: baseline;
+                margin-top: 20px;
+             }
+
+}

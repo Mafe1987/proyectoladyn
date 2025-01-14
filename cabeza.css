@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-#fondo{
+.fondo{
   width: 100%;
   height: 100vh;
   object-fit: cover;
@@ -52,7 +52,7 @@ nav{
     .grey{
       color: rgb(128, 128, 128);
     }
-    #barra{
+    .barra{
       height: 100%;
       width: 1px;
       background-color: white;
@@ -64,6 +64,21 @@ nav{
       display: none;
     }
   
+    /*parte de las 3 casas*/
+
+    .card{
+      position: relative;
+      width: 100px;
+     
+    }
+    h5{
+      color: brown;
+      position: absolute;
+     }
+     h6{
+      color: blue;
+      pointer-events:initial;
+     }
     @media (max-width: 700px)
     {
       html{
