@@ -1,4 +1,4 @@
-/*parte que sirve*/
+/*8 fotos*/
 .galeria{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;

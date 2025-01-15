@@ -65,12 +65,36 @@ nav{
     }
   
     /*parte de las 3 casas*/
+    .secc{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
 
     .card{
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
       position: relative;
       width: 100px;
-     
+      gap: 10px;
+      
     }
+    
+    .one{
+       grid-column: span 2;
+       width: 100%;
+       height: 100%;
+       
+    }
+    .two{
+       grid-column: span 5;
+        
+    }
+
+    .three{
+        grid-column: span 5;
+    }
+  
+    
     h5{
       color: brown;
       position: absolute;
@@ -79,11 +103,11 @@ nav{
       color: blue;
       pointer-events:initial;
      }
+
+
+
     @media (max-width: 700px)
     {
-      html{
-      background-color: red;
-      }
      #Logo{
       display: none;
      }
