@@ -68,8 +68,8 @@ nav{
     .secc{
       display: grid;
       grid-template-columns: 1fr 1fr;
+      
     }
-
     .card{
       display: grid;
       grid-template-columns: repeat(12, 1fr);
