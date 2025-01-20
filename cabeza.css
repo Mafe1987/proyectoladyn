@@ -72,37 +72,109 @@ nav{
     }
     .card{
       display: grid;
-      grid-template-columns: repeat(12, 1fr);
       position: relative;
+     
+      grid-template-columns:  repeat(12, 1fr);
       width: 100px;
-      gap: 10px;
-      
+      column-gap: 30px;
+      margin-top: 10px;
+      margin-bottom: 10px;      
     }
     
     .one{
-       grid-column: span 2;
-       width: 100%;
-       height: 100%;
-       
+       grid-column: span 2;  
     }
+
     .two{
        grid-column: span 5;
-        
     }
 
     .three{
-        grid-column: span 5;
-    }
-  
-    
-    h5{
-      color: black;
+        grid-column: span 5; 
+      
+      }
+    .imagen{
+        width: 100%;
+        
+       }
+       .imagen1{
+        width: 100%;
+        height: 100%;
+       }
+    .t5{
+      color: white;
       position: absolute;
-     }
-     h6{
-      color: blue;
-      pointer-events:initial;
-     }
+      transform: translateY(-100%);
+      display: grid;
+      font-size: 20px;
+      padding: 20px;  
+    }
+    .t6{
+      color: black;
+      background-color: white;
+      position: absolute;
+      transform: translateY(-100%);
+      display: grid;
+      font-size: 20px;
+      padding: 20px; 
+      text-align: center;
+      
+    }
+    /*parte contenido*/
+    .contenido{
+      display: grid;
+      padding-right: 20px;
+    }
+    .textoss{
+      font-size: 30px;
+      text-align: right;
+    }
+    .azul{
+      color: #DF991B;
+      size: 40px;
+      line-height: 45px;
+    }
+    .propi{
+      color: #000000;
+      size: 80px;
+      line-height: 45px;
+    }
+    .botones{
+      display: grid;
+      grid-template-columns:  1fr 5fr 1fr;
+      align-items: center;
+    } 
+    /*BOTONES PREV Y NEXT*/
+    .direcciones1{
+      background-color: transparent;
+      border: none;
+      color: #B4B7B7;
+      size: 20px;
+      line-height: 45px;
+    }
+    .direcciones2{
+      background-color: transparent;
+      border: none;
+      color: #DF991B;
+      size: 20px;
+      line-height: 45px;
+    }
+    /*boton del medio*/
+    .bmedio{
+      background-color: transparent;
+      border-radius: 100px;
+      height: fit-content;
+      color: #000000;
+      size: 30px;
+      line-height: 45px;
+      align-content: center;
+      border: solid 1px #000000;
+      padding: 10px;
+      font-size: 15px;
+      
+   
+
+    }
 
 
 
@@ -124,6 +196,23 @@ nav{
       display: inline;
       margin-left: 30px;
       
+    }
+    /*parte del boton*/
+    .secc{
+      grid-template-columns: 1fr;
+    }
+    .textoss{
+      display: none;
+    }
+    .imagen1{
+      display:none;
+    }
+    .two{
+      grid-column:  span 10;
+
+    }
+    .three{
+      grid-column:  span 2;
     }
     }
   
