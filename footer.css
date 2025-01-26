@@ -31,7 +31,14 @@ dd{
 }
 .primera{
     align-self: end;
+    @font-face {
+        font-family: 'Cabin';
+        src: url('./fuente/letra/Cabin-Italic.ttf');
+    }
 }
+ .fuente{
+    font-family: 'Cabin';
+ }
 .medio{
     justify-self:  center;
     align-self: center;
