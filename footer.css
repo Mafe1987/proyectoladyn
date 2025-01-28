@@ -32,8 +32,8 @@ dd{
 .primera{
     align-self: end;
     @font-face {
-        font-family: 'Cabin';
-        src: url('./fuente/letra/Cabin-Italic.ttf');
+        font-family: "fuente";
+        src: url(./fuente/letra/Cabin-Italic.ttf);
     }
 }
  .fuente{
@@ -102,7 +102,7 @@ span{
 }
 input{
     background-color: transparent;
-    border: solid 1px white;
+    border: solid 1px #7E7E7E;
     border-radius: 100px;
     padding: 10px 20px;
     font-size: 20px;
