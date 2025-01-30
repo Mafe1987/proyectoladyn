@@ -17,7 +17,7 @@ body{
 nav{
    width: 100%;
    height: 50px;
-   background-color: transparent;
+   background-color: rgba(195, 211, 181, 0.26);
    display: grid;
    grid-template-columns: 3fr 1fr 1fr;
    align-items: center;
@@ -26,12 +26,36 @@ nav{
    border: #FFFFFF 1PX;
    
 }
+/*parte de los botones que estan en la casa de fondo*/
+.contenedor{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  
+
+}
+
 .Prime{
+  display: grid;
   position: absolute;
   top: 400px;
   margin-left: 5vw;
   color: #FFFFFF;
+  justify-self: self-end;
+  gap: 10px;
   
+}
+.Lupa{
+  width: 30px; 
+}
+.flecha{
+  width: 20px;
+}
+h2{
+  color:#B4B7B7;
+}
+h1{
+  color: #FFFFFF;
 }
 .Cabeza{
   background-color: transparent;
@@ -40,10 +64,11 @@ nav{
   padding: 10px 20px;
   color: #FFFFFF;
   border: 1px solid;
-  width: 100%;
+  width: fit-content;
+  margin-right: 20px;
 }
 
-/*parte derecha*/
+/*parte invertida*/
 .Tod{
   display: grid;
   grid-template-columns: 1fr;
@@ -64,12 +89,10 @@ nav{
   transform: rotate(90deg);
   display: inline-block;
 }
-/*parte izquierda*/
 
-.Lupa{
-  width: 100%;
-  color: red;
-}
+
+
+
 
 /*parte invertida*/
 .Imag{
@@ -136,7 +159,7 @@ nav{
     }
     
     .one{
-       grid-column: span 2;  
+      grid-column: span 2;  
     }
 
     .two{
