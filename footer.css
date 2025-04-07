@@ -21,6 +21,7 @@ dd{
     text-align: center;
     color: #ffffff;
     margin-top: 10px;
+    font-family: 'brandon';
   }
 
 
@@ -33,11 +34,11 @@ dd{
     align-self: end;
     @font-face {
         font-family: 'Cabin';
-        src: url('./fuente/letra/Cabin-Italic.ttf');
+        src: url("./fuente/letra/Cabin-Italic.ttf");
     }
 }
  .fuente{
-    font-family: 'Cabin';
+    font-family: 'brandon';
  }
 .medio{
     justify-self:  center;
@@ -56,6 +57,7 @@ dd{
 
 li{
     list-style:  none;
+    font-family: 'brandon';
 }
     
 
@@ -63,7 +65,7 @@ li{
 
 .gris{
     
-    background-color: grey;
+    background-color: #26282B;
     width: 80%;
     margin: auto;
     transform: translateY(-50%);
@@ -84,6 +86,7 @@ li{
 b{
     margin-left: 20px;
     color: #ffffff;
+    font-family:'brandon';
   }
  
     
@@ -93,6 +96,7 @@ b{
     font-size: 30px;
     color: white;
     justify-content: center;
+    font-family:'pfregal';
 
     
 }
@@ -102,10 +106,11 @@ span{
 }
 input{
     background-color: transparent;
-    border: solid 1px white;
+    border: solid 1px #7e7e7e;
     border-radius: 100px;
     padding: 10px 20px;
     font-size: 20px;
+    font-family: 'brandon';
 }
 button{
     background-color: transparent;
@@ -116,13 +121,21 @@ button{
     width: 60%;
     color: #df991b;
     justify-self: end;
+    font-family: 'brandon';
 }
 @media (max-width: 700px) {
    /* footer*/        .gris{
             display: none;
         }
+
+        footer{
+    
+            margin-top: 10px;
+            
+        }
     
       /*  .negro*/
+      
           .copy{
             display: none;
           }

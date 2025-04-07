@@ -13,11 +13,14 @@
   <!--cabeza-->
   <header>
     <nav>
-
       <!--primer celda-->
-      <div id="Logo">
-        <img src="./imagenes1/Logo.png">
+      <div >
+        <img src="./imagenes1/Logo.png" class="Logo">
         <img src="./imagenes1/circulo.png" class="circulo">
+        <img src="./imagenes1/lupa2.png" class="lupa2">
+        <img src="./imagenes1/Ellipse 22.png" class="lupa2 lup">
+     
+       
       </div>
       <!--segunda celda-->
       <div class="links">
@@ -28,7 +31,7 @@
       <!--tercera-->
        <div class="idioma">
         <a href="" class="grey">ESP</a>
-        <a href="">ENG</a>
+        <a href="" class="grey">ENG</a>
         <img src="./imagenes1/burger.png" class="hambur">
       </div>
     </nav>
@@ -40,21 +43,25 @@
      <img src="./imagenes1/fondo.png" class="fondo">
      <!--parte de los botones que estan en la casa de fondo-->
     <div class="contenedor"> 
-     
-     <div class="buscador">
-        <input type="text" placeholder="Ex. Villa Budapest"/>
-        <img src="./imagenes1/lupa.png" class="Lupa">
+      <div class="Prime">
+        <h2> Luxury</h2>
+        <h1>Real Estate</h1>
+        <button class="Cabeza"><img src="./imagenes1/flecha.png" class="flecha">
+          View all properties</button>
       
-        <!--bottom lupa-->
-        <div class="Prime">
-          <h2> Luxury</h2>
-          <h1>Real Estate</h1>
-          <button class="Cabeza"><img src="./imagenes1/flecha.png" class="flecha">
-            View all properties</button>
-        
-        </div>
       </div>
-    </div> 
+     
+     </div>
+      
+     
+
+    <!--conflicto-->
+    <div class="contenedor">
+     <div class="buscador">
+        <input class="ok" type="text" placeholder="Ex. Villa Budapest"/>
+        <img src="./imagenes1/lupa.png" class="Lupa">
+     </div>
+    </div>
     <!--parte invertida-->
        <div class="Tod">
          <p class="Rot">Follow</p>
@@ -67,13 +74,21 @@
            <img src="./imagenes1/youtube.png" alt="">
          </div>
        </div>
+        
+       <!--3lineas-->
+       <div class="contCuadrito">
+          <div></div>
+          <div class="cuadrito"></div>
+          <div class="cuadrito"></div>
+          <div class="cuadrito"></div>
+       </div>
+       
      <!--parte de las 3 fotos-->
     <div class="secc">
      <div class="card">
           <div class="one">
             <img class="imagen"   src="./imagenes1/foto1.jpg">
           </div>
-    
             <div class="two">
              <img class="imagen"  src="./imagenes1/foto2.jpg">
               <div class="t5">
@@ -81,7 +96,6 @@
                 <h5>Glasgow</h5>
               </div>
            </div>
-
              <div class="three">
                 <img class="imagen"  src="./imagenes1/foto3.jpg">
                <div class="t6"> 
@@ -103,9 +117,12 @@
              </div>
           </div>
     </div> 
-    
+    <!--parte divide las 3 y 8 fotos-->
 
-
+    <div id="devel">
+      <div id="luxu"><h4>Luxury properties</h4>
+      <h3>Developments</h3></div>
+    </div>
 
   <!-- parte 8 fotos-->
     <div class="galeria">
@@ -113,51 +130,61 @@
         <img src="imagenes1/im1.jpg" alt=""> 
           <p style="grid-column: 1;"></p>
           <p>The Surf Row </p>
-          <p>Surfside</p>
+          <p class="parra">Surfside</p>
         </div>
         <div>
          <img src="imagenes1/im2.jpg" alt="">
          <p style="grid-column: 1;"></p>
           <p>Indigo </p>
-          <p>Vero Beach</p>
+          <p class="parra">Vero Beach</p>
         </div>
         <div>
         <img src="imagenes1/im3.jpg" alt="">
         <p style="grid-column: 1;"></p>
           <p>Rosewood Baha Mar </p>
-          <p>Nassau, the Bahamas</p>
+          <p class="parra">Nassau, the Bahamas</p>
         </div>
         <div>
          <img src="imagenes1/im4.jpg" alt="">
          <p style="grid-column: 1;"></p>
           <p>St. Regis The Astor Tower </p>
-          <p>Brickell, Miami</p>
+          <p class="parra">Brickell, Miami</p>
         </div>
         <div>
         <img src="imagenes1/im5.jpg" alt="">
         <p style="grid-column: 1;"></p>
           <p>Giralda PLacer </p>
-          <p>Coral Gables</p>
+          <p class="parra">Coral Gables</p>
         </div>
         <div>
          <img src="imagenes1/im6.jpg" alt="">
          <p style="grid-column: 1;"></p>
           <p>St. Regis  The William Tower </p>
-          <p>Brickell, Miami</p>
+          <p class="parra">Brickell, Miami</p>
         </div>
         <div>
         <img src="imagenes1/im7.jpg" alt="">
         <p style="grid-column: 1;"></p>
           <p>Solterre at Cockleshell Bay </p>
-          <p>St. Kitts and nevis</p>
+          <p class="parra">St. Kitts and nevis</p>
         </div>
         <div>
          <img src="imagenes1/im8.jpg" alt="">
          <p style="grid-column: 1;"></p>
           <p>Urbin </p>
-          <p>Coconut grove</p>
+          <p class="parra">Coconut grove</p>
         </div>
     </div>
+
+     <div class="cambio">
+      <div><img src="imagenes1/Mask.jpg">
+      <div><img src="imagenes1/Mask(1).jpg"></div>
+      <div><img src="imagenes1/Mask(2).jpg"></div>
+      </div>
+     </div>
+
+
+
     <!--ultima parte-->
     <footer>
       <div class="gris">
@@ -175,7 +202,7 @@ Unlock <br/>
       </div>
           <div class="negro">
            <div class="enlaces">
-              <div class="primera">
+              <div class="fprimera">
                 <ul>
                   <li class="becomeClass fuente">Become a new Uniq Artis</li>
                   <li>Become a Commercial Partner</li>
@@ -196,7 +223,7 @@ Unlock <br/>
                   <li class="separado">Contact us</li>
                 </ul>
               </div>
-              <div class="ultima">
+              <div class="fultima">
                 <ul>
                   <li>Call Center</li>
                   <li>+52 55 6840 4000</li>

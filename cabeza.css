@@ -3,12 +3,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family:'pfregal';
+  src: url('./fuentes/PFRegalDisplayPro-Regular.ttf');
+}
+@font-face {
+  font-family: 'brandon';
+  src: url('./fuentes/brandon grotesque/static/brandon-grotesque-font-family-1744015910-0/HvDTrial_Brandon_Grotesque_regular_italic-BF64a625c94445e.otf');
+}
+
+h1, h2{
+  font-family:'pfregal';
+}
+
 /*imagen de la casa de fondo cabeza*/
 .fondo{
   width: 100%;
   height: 100vh;
   object-fit: cover;
 }
+
 
 body{
   height: 500vh;
@@ -26,6 +41,25 @@ nav{
    border: #FFFFFF 1PX;
    
 }
+.lupa2{
+  display: none;
+}
+/*parte 3 rayitas*/
+ 
+.contCuadrito{
+  display: grid;
+  grid-template-columns:5fr 1fr 1fr 1fr 5fr;
+  position: absolute;
+  top: 90vh;
+  width: 100%;
+}
+.cuadrito{
+  height: 5px;
+  width: 31.5px;
+  background-color:#B4B7B7;
+  margin-right: 10px;
+ 
+}
 /*parte de los botones que estan en la casa de fondo*/
 .contenedor{
   display: grid;
@@ -41,12 +75,34 @@ nav{
   top: 400px;
   margin-left: 5vw;
   color: #FFFFFF;
-  justify-self: self-end;
+  justify-self: self-start;
   gap: 10px;
+ 
   
 }
+/*conflicto*/
+.buscador{
+  display: grid;
+  position: absolute;
+  top: 80px;
+  justify-self: end ;
+  padding: 50px;
+}
+.ok{
+  
+    background-color: transparent;
+    border: solid 1px #FFFFFF;
+    border-radius: 100px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
 .Lupa{
-  width: 30px; 
+  width: 30px;
+  display: grid;
+  position: relative;
+  justify-self: end;
+  top: -35px;
+  margin-right: 20px;
 }
 .flecha{
   width: 20px;
@@ -100,9 +156,12 @@ h1{
 }
 
   /*primera parte*/
-   #Logo {
+   .Logo {
     margin-left: 80px;
     width: 30%;
+  }
+  .circc{
+    display: none;
   }
   /*segunda*/
    .links{
@@ -116,6 +175,7 @@ h1{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    
     
   }
    a {
@@ -140,22 +200,23 @@ h1{
       justify-items: center;
       display: none;
     }
+
+
   
     /*parte de las 3 casas*/
     .secc{
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
       
     }
     .card{
       display: grid;
       position: relative;
-     
       grid-template-columns:  repeat(12, 1fr);
-      width: 100px;
-      column-gap: 30px;
-      margin-top: 10px;
-      margin-bottom: 10px;      
+      
+      column-gap: 10px;
+      margin-top: 5px;
+      margin-bottom: 20px;      
     }
     
     .one{
@@ -168,12 +229,12 @@ h1{
 
     .three{
         grid-column: span 5; 
-      
+        position: relative;
       }
     .imagen{
         width: 100%;
-        height: 100%;
-        
+        height: 90%;
+        object-fit: cover;
        }
        
     .t5{
@@ -182,7 +243,8 @@ h1{
       transform: translateY(-100%);
       display: grid;
       font-size: 20px;
-      padding: 20px;  
+      padding: 20px;
+      font-family:'pfregal';  
     }
     .t6{
       color: black;
@@ -192,13 +254,29 @@ h1{
       display: grid;
       font-size: 20px;
       padding: 30px; 
-      text-align: center;
+      text-align: justify;
+      text-align-last: start;
+      width: 100%;
+      font-family:'pfregal';
       
     }
+    p{
+      font-family:'pfregal';
+    }
+    /*parte texto 8 fotos mas oscuro*/
+    .parra{
+      size: 40px;
+      line-height: 45px;
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    
     /*parte contenido*/
     .contenido{
       display: grid;
-      padding-right: 20px;
+      padding-right: 40px;
+      
     }
     .textoss{
       font-size: 30px;
@@ -208,16 +286,21 @@ h1{
       color: #DF991B;
       size: 40px;
       line-height: 45px;
+      font-family:'pfregal';
+      
     }
     .propi{
       color: #000000;
       size: 80px;
       line-height: 45px;
+      font-family:'pfregal';
     }
     .botones{
       display: grid;
       grid-template-columns:  1fr 5fr 1fr;
       align-items: center;
+      padding-right: 40px;
+      
     } 
     /*BOTONES PREV Y NEXT*/
     .direcciones1{
@@ -244,41 +327,94 @@ h1{
       line-height: 45px;
       align-content: center;
       border: solid 1px #000000;
-      padding: 10px;
+      padding: 1%;
       font-size: 15px;
       
-   
 
+    }
+
+   
+    
+
+
+    .fultima{
+      text-align: end;
     }
 
 
 
     @media (max-width: 700px)
     {
-     #Logo{
+     .Logo{
       display: none;
      }
-     .idioma{
+     nav{
+      width: 100%;
+      height: 50px;
+      background-color: rgba(195, 211, 181, 0.26);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      border: #FFFFFF 1PX;
+      
+   }
+     
+     .lupa2{
+      display: inline;
+      width: 15px;
+      margin-left: 20px;
+     }
+      .lup{
+      width: 25px;
+      margin-left: -22px;
+     }
+     
+     .grey{
       display: none;
      }
      .links{
       display: none;
     }
-     .hambur{
-      display: inline;
-     }
-     .circulo{
-      display: inline;
-      margin-left: 30px;
-      
-    }
+     
+     
     /*parte del boton*/
     .secc{
       grid-template-columns: 1fr;
+      width: 100%;
     }
     .textoss{
       display: none;
     }
+    .t5{
+      display: none;
+    }
+    .t6{
+      display: none;
+    }
+    .one{
+      display: none;
+    }
+    .contenido{
+      display: none;
+    }
+     /*parte invertida*/
+       .Tod{
+        display: none;
+       }
+       .Lupa{
+        display: none;
+       }
+
+       .contenedor, .buscador{
+        left: 22px;
+        right: 22px;
+        justify-self: center;
+       }
+
+
+
     .imagen1{
       display:none;
     }
@@ -289,7 +425,68 @@ h1{
     .three{
       grid-column:  span 2;
     }
+
+    #luxu, h3, h4{
+      text-align: start;
     }
-  
+
+    /*8 fotos a 3*/
+
+       .galeria{
+        display: none;
+       }
+       .cambio{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+       }
+       .cambio, img{
+        width: 100%;
+       }
+
+    /*ultima parte*/
     
+    footer
     
+      .gris{
+        display: none;
+      }
+      .enlaces{
+        grid-template-columns: 1fr 1fr;
+      }
+      .fprimera{
+        margin-top: 10px;
+        grid-column: span 2;
+      }
+      .medio, .tres{
+        justify-self: baseline;
+        margin-top: 15px;
+      }
+      .fultima{
+        grid-column: span 2;
+        margin-top: 50px;
+        justify-self: baseline;
+        text-align: left;
+        margin-bottom: 20px;
+      }
+        .copy{
+          display: none;
+        }
+        .idioma{
+          justify-items: end;
+          grid-template-columns: 1fr;
+          width: 40%; 
+        }
+        .hambur{
+          margin-right: -115%;
+          width: 30%;
+          
+        }
+        .Prime{
+          justify-self: center;
+        
+        }
+        
+        
+        
+      }

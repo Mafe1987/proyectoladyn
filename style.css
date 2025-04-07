@@ -4,6 +4,23 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
       column-gap: 1%;
 }
+
 img {
   width: 100%;
+}
+
+.cambio{
+  display: none;
+}
+
+#luxu, h3{
+  color: #000000;
+  text-align: center;
+  font-size: 45px;
+  font-family:'pfregal';
+}
+#luxu, h4{
+  color: #DF991B;
+  font-size: 30px;
+  font-family:'pfregal';
 }
