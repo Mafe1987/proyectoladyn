@@ -262,6 +262,7 @@ h1{
     }
     p{
       font-family:'pfregal';
+      font-weight: 200;
     }
     /*parte texto 8 fotos mas oscuro*/
     .parra{
@@ -442,6 +443,7 @@ h1{
        }
        .cambio, img{
         width: 100%;
+
        }
 
     /*ultima parte*/
@@ -487,6 +489,19 @@ h1{
         
         }
         
-        
+       .Cabeza{
+        padding-left: 160px;
+        padding-right: 160px;
+       } 
+       .cambios1{
+        display: grid;
+        position: relative;
+        top: -455px;
+        gap: 10px;
+        margin-left: 15vw;
+        color: #FFFFFF;
+        font-family:'pfregal';
+        font-weight: 200;
+       }
         
       }
